@@ -9,6 +9,9 @@ if (query.has('page')) {
         document.querySelector('.text').innerHTML = this.response;
         // Highlight link to requested document
         document.querySelector('.sidebar a[href="?page=' + query.get('page') + '"]').style.fontWeight = 'bold';
+        // Change title of page
+        let title = document.querySelector('.sidebar a[href="?page=' + query.get('page') + '"]').textContent;
+        document.querySelector('title').textContent = title + ' - Flashpoint Help Manual';
     };
 }
 else
