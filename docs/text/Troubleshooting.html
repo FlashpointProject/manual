@@ -1,15 +1,7 @@
-<div class="inner-header">The extraction window displays errors while extracting Flashpoint</div>
-Make sure you aren't extracting Flashpoint to the Temp or Program Files folders. If you are still getting errors regardless, the file may not have been downloaded properly and should be redownloaded.
+<div class="inner-header">I get an error that a component couldn't be downloaded while installing Flashpoint</div>
+Wait a couple minutes and then retry the download. If the error reappears, it is possible that the component server is either overloaded or down for maintenance; in that case, you can download a zipped copy of Flashpoint from the <a href="https://flashpointarchive.org/downloads" target="_blank">download page</a>.
 <br><br><br>
 <div class="inner-header">The Flashpoint window isn't appearing when I run it</div>
-First, look inside your Flashpoint folder and check the size of the preferences.json file.
-<br><br>
-If preferences.json has a size of 0 KB:
-<ol>
-    <li>Delete preferences.json.
-    <li>Download a new copy of preferences.json from <a href="https://infinity.unstable.life/Flashpoint/preferences.json" target="_blank">here</a> and insert it into your Flashpoint folder.
-</ol>
-If preferences.json doesn't have a size of 0 KB, or Flashpoint still isn't starting after following the above instructions:
 <ol>
     <li>Right-click on the taskbar and select <b>Task Manager</b>.
     <li>In the opened Task Manager window, go to the <b>Details</b> tab.
@@ -19,37 +11,20 @@ If preferences.json doesn't have a size of 0 KB, or Flashpoint still isn't start
 <br>
 <div class="inner-header">I get an error saying that ffmpeg.dll was not found</div>
 <div class="inner-image"><img src="images/ffmpeg.png"></div>
-If you have the Avira antivirus installed, add an exception for your Flashpoint folder and then re-extract Flashpoint to it (if 7-Zip asks you if you want to replace a file, click <b>No to All</b>).
+If you have the Avira antivirus installed, add an exception for your Flashpoint folder.
 <br><br>
-Otherwise, check the location of the Flashpoint folder by looking at the folder path above the file view in File Explorer.
-<br><br>
-If the folder path includes <b>AppData > Local > Temp</b>:
+To restore the missing ffmpeg.dll file:
 <ol>
-    <li>Delete your Flashpoint folder.
-    <li>Re-extract Flashpoint, this time to a location such as your Downloads folder or your desktop. The extractor is probably located in the Temp folder as well, but if you cannot find it, redownload it.
-</ol>
-<br>
-<div class="inner-header">The launcher has no games or animations</div>
-<div class="inner-image"><img src="images/nogames.png"></div>
-Click the <b>Config</b> button at the top of the launcher and look at the Flashpoint path input box in the <i>Flashpoint</i> section.
-<br><br>
-If the input box is red:
-<ol>
-    <li>Click the <b>Browse</b> button.
-    <li>Find your Flashpoint folder in the File Explorer window that appears, then select it and click <b>Select Folder</b>. The Flashpoint path should turn green.
-    <li>Scroll to the bottom of the configuration screen and click the <b>Save and Restart</b> button.
-</ol>
-If the input box is green:
-<ol>
-    <li>Close Flashpoint.
-    <li>Download flashpoint.sqlite from <a href="http://infinity.unstable.life/Flashpoint/Data/flashpoint.sqlite" target="_blank">here</a>.
-    <li>Inside Flashpoint's Data folder, replace your old copy of flashpoint.sqlite with the one you just downloaded.
+    <li>Open Flashpoint Manager by navigating to the Manager folder in the Flashpoint directory and launching FlashpointManager.exe.
+    <li>Go to the Update Components tab and click the <b>Install updates</b> button if there are any pending updates. If the launcher was one of the pending updates, you do not need to follow the remaining steps.
+    <li>Go to the Settings tab and click the <b>Check for missing files</b> button. The manager will then scan for missing files and the launcher should appear in the list.
+    <li>Click the <b>Redownload components</b> button to redownload the launcher component, and with it the missing ffmpeg.dll file.
 </ol>
 <br>
 <div class="inner-header">Launching a game or animation results in a blank window</div>
-First, make sure that the prerequisites listed on the <a href="https://bluemaxima.org/flashpoint/downloads/" target="_blank">download page</a> are installed.
+If you originally downloaded Flashpoint using the zipped copy, make sure that the prerequisites listed on the <a href="https://flashpointarchive.org/downloads/" target="_blank">download page</a> are installed.
 <br><br>
-If they are installed and entries are still opening a blank window, it is likely the result of antivirus interference. <a href="https://bluemaxima.org/flashpoint/datahub/Troubleshooting_Antivirus_Interference" target="_blank">Follow this guide</a> to add an antivirus exception for Flashpoint. Make sure to re-extract Flashpoint afterwards in order to restore any deleted files.
+If they are installed and entries are still opening a blank window, it is likely the result of antivirus interference. <a href="https://flashpointarchive.org/datahub/Troubleshooting_Antivirus_Interference" target="_blank">Follow this guide</a> to add an antivirus exception for Flashpoint.
 <br><br><br>
 <div class="inner-header">Still having issues?</div>
-You may find more detailed troubleshooting info at the <a href="https://bluemaxima.org/flashpoint/datahub/Extended_FAQ#Troubleshooting" target="_blank">Extended FAQ</a> page. Otherwise, join the <a href="https://bluemaxima.org/flashpoint/discord/" target="_blank">Flashpoint Discord server</a> and explain your problem in the <b>#flashpoint-help</b> channel.
+You may find more detailed troubleshooting info at the <a href="https://flashpointarchive.org/datahub/Extended_FAQ#Troubleshooting" target="_blank">Extended FAQ</a> page. Otherwise, join the <a href="https://flashpointarchive.org/discord/" target="_blank">Flashpoint Discord server</a> and create a thread in the <b>flashpoint-help</b> channel.
